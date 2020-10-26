@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Game Survey</title>
+    <link rel="stylesheet" href="/css/game-survey.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+
+<body>
+
+    <div class="title animated bounceInRight">
+        <h1 class="game-title">Video Game Survey</h1>
+    </div>
+    <div class="animated bounceInLeft">
+        <div class="container">
+            <form id="survey-form" method="POST" action="game_send">
+                <div class="labels">
+                    <label id="name-label" for="name">Name</label>
+                </div>
+                <div class="input-tab">
+                    <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name" required
+                        autofocus />
+                </div>
+
+                <div class="labels">
+                    <label id="email" for="email">Email</label>
+                </div>
+                <div class="input-tab">
+                    <input class="input-field" type="email" id="email" name="email" placeholder="email@email.com" />
+                </div>
+
+                <div class="labels">
+                    <label id="favorite-label" for="favorite">Favorite game/games of all time</label>
+                </div>
+                <div class="input-tab">
+                    <input class="input-field" type="text" id="favorite" name="favorite"
+                        placeholder="Super Mario Bros 3, God of War(PS4), Final Fantasy VII" required />
+                </div>
+
+                <div class="labels">
+                    <label id="genre-label" for="system">Favorite system to play games on</label>
+                </div>
+                <div class="input-tab">
+                    <select class="input-field" id="system" name="system">
+                        <option value="pc">PC</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="ps4">Playstation 4</option>
+                        <option value="switch">Nintendo Switch</option>
+                    </select>
+                </div>
+
+                <div class="labels">
+                    <label>Single player or muliplayer?</label>
+                </div>
+                <div class="input-tab" id="singlemulti" name="singlemulti">
+                    <input class="radio" type="radio" id="single" name="singlemulti" value="single-player" />Single
+                    Player<br />
+                    <input class="radio" type="radio" id="multi" name="singlemulti"
+                        value="multiplayer" />Multiplayer<br />
+                </div>
+
+                <div class="labels">
+                    <label>Favorite video game genres<br />(Check as many as you
+                        want.):</label>
+                </div>
+                <div class="input-tab" id="genre">
+                    <input class="checkbox" type="checkbox" name="genre" value="action" />Action/Adventure<br />
+                    <input class="checkbox" type="checkbox" name="genre" value="platform" />Platformer<br />
+                    <input class="checkbox" type="checkbox" name="genre" value="rpg" />RPG<br />
+                    <input class="checkbox" type="checkbox" name="genre" value="fps" />First Person Shooters<br />
+                    <input class="checkbox" type="checkbox" name="genre" value="strategy" />Strategy<br />
+                </div>
+
+                <div class="labels">
+                    <label for="comments">Explain why your favorite game/games are the best games of all
+                        time and what they did to revolutionize gaming as we know
+                        it.</label>
+                </div>
+                <div class="input-tab">
+                    <textarea class="input-field" id="explain" name="explain" rows="10" cols="40"
+                        placeholder="My games are the best because..."></textarea>
+                </div>
+
+                <div class="btn">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/tech-doc.css" />
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="nav-link" href="#intro">Introduction</a>
+      <a class="nav-link" href="#syntax">Syntax</a>
+      <a class="nav-link" href="#borders">Borders</a>
+      <a class="nav-link" href="#margin">Margin</a>
+      <a class="nav-link" href="#padding">Padding</a>
+      <a class="nav-link" href="#max-width">Max-width</a>
+      <a class="nav-link" href="#inline">Inline-block</a>
+      <a class="nav-link" href="#position">Position</a>
+      <a class="nav-link" href="#overflow">Overflow</a>
+      <a class="nav-link" href="#flex">Flex</a>
+      <a class="nav-link" href="#grid">Grid</a>
+      <a class="nav-link" href="#height-width">Height-width</a>
+      <a class="nav-link" href="#tables">Tables</a>
+      <a class="nav-link" href="#display">Display</a>
+      <a class="nav-link" href="#icons">Icons</a>
+    </div>
+    <div class="main">
+      <h2 id="intro">Introduction</h2>
+      <h3>What is CSS?</h3>
+      <ul>
+        <li>CSS stands for Cascading Style Sheets.</li>
+        <li>
+          CSS describes how HTML elements are to be displayed on screen, paper,
+          or in other media.
+        </li>
+        <li>
+          CSS saves a lot of work. It can control the layout of multiple web
+          pages all at once.
+        </li>
+        <li>External stylesheets are stored in CSS files.</li>
+      </ul>
+      <h3>Why use CSS?</h3>
+      <p>
+        CSS is used to define styles for your web pages, including the design,
+        layout and variations in display for different devices and screen sizes.
+      </p>
+      <h2 id="syntax">Syntax</h2>
+      <p>
+        Each declaration includes a CSS property name and a value, separated by
+        a colon.
+      </p>
+      <p>
+        The declaration block contains one or more declarations separated by
+        semicolons.
+      </p>
+      <p>
+        A CSS declaration always ends with a semicolon, and declaration blocks
+        are surrounded by curly braces.
+      </p>
+      <p>
+        In the following example all p elements will be center-aligned, with a
+        red text color:
+      </p>
+      <div class="code-snippet">
+        <code>
+          p { <br />
+          text-align: center;<br />
+          color: red;<br />
+          } <br />
+        </code>
+      </div>
+      <h2 id="borders">Borders</h2>
+      <p>
+        The border-style property specifies what kind of border to display.
+      </p>
+      <p>The following values are allowed:</p>
+      <ul>
+        <li>dotted - Defines a dotted border</li>
+        <li>dashed - Defines a dashed border</li>
+        <li>solid - Defines a solid border</li>
+        <li>double - Defines a double border</li>
+      </ul>
+      <h2 id="margin">Margin</h2>
+      <p>
+        The CSS margin properties are used to create space around elements,
+        outside of any defined borders.
+      </p>
+      <p>
+        With CSS, you have full control over the margins. There are properties
+        for setting the margin for each side of an element (top, right, bottom,
+        and left).
+      </p>
+      <h3>Margin Properties:</h3>
+      <p>
+        CSS has properties for specifying the margin for each side of an
+        element:
+      </p>
+      <ul>
+        <li>padding-top</li>
+        <li>padding-right</li>
+        <li>padding-bottom</li>
+        <li>padding-left</li>
+      </ul>
+      <div class="code-snippet">
+        <code>
+          p {<br />
+          margin-top: 100px; <br />
+          margin-bottom: 100px; <br />
+          margin-right: 150px; <br />
+          margin-left: 80px; <br />
+          } <br />
+        </code>
+      </div>
+      <h2 id="padding">Padding</h2>
+      <p>
+        The CSS padding properties are used to generate space around an
+        element's content, inside of any defined borders.
+      </p>
+      <p>
+        With CSS, you have full control over the padding. There are properties
+        for setting the padding for each side of an element (top, right, bottom,
+        and left).
+      </p>
+      <h3>Padding properties:</h3>
+      <p>
+        CSS has properties for specifying the padding for each side of an
+        element:
+      </p>
+      <ul>
+        <li>padding-top</li>
+        <li>padding-right</li>
+        <li>padding-bottom</li>
+        <li>padding-left</li>
+      </ul>
+      <div class="code-snippet">
+        <code>
+          div {<br />
+          padding-top: 50px; <br />
+          padding-right: 30px; <br />
+          padding-bottom: 50px; <br />
+          padding-left: 80px; <br />
+          } <br />
+        </code>
+      </div>
+      <h2 id="max-width">Max-width</h2>
+      <h3>Using width, max-width and margin: auto;</h3>
+      <p>
+        As mentioned in the previous chapter; a block-level element always takes
+        up the full width available (stretches out to the left and right as far
+        as it can).
+      </p>
+      <p>
+        Setting the width of a block-level element will prevent it from
+        stretching out to the edges of its container. Then, you can set the
+        margins to auto, to horizontally center the element within its
+        container. The element will take up the specified width, and the
+        remaining space will be split equally between the two margins.
+      </p>
+      <h2 id="inline">Inline-block</h2>
+      <h3>The display: inline-block Value</h3>
+      <p>
+        Compared to display: inline, the major difference is that display:
+        inline-block allows to set a width and height on the element.
+      </p>
+      <p>
+        Also, with display: inline-block, the top and bottom margins/paddings
+        are respected, but with display: inline they are not.
+      </p>
+      <p>
+        Compared to display: block, the major difference is that display:
+        inline-block does not add a line-break after the element, so the element
+        can sit next to other elements.
+      </p>
+      <h2 id="position">Position</h2>
+      <h3>The position properties</h3>
+      <p>
+        The position property specifies the type of positioning method used for
+        an element.
+      </p>
+      <p>There are five different position values:</p>
+      <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+      </ul>
+      <div class="code-snippet">
+        <code>
+          div.static {<br />
+          position: static;<br />
+          border: 3px solid #73AD21;<br />
+          } <br />
+        </code>
+      </div>
+      <h2 id="overflow">Overflow</h2>
+      <p>
+        The overflow property specifies whether to clip the content or to add
+        scrollbars when the content of an element is too big to fit in the
+        specified area.
+      </p>
+      <p>The overflow property has the following values:</p>
+      <ul>
+        <li>
+          visible - Default. The overflow is not clipped. The content renders
+          outside the element's box
+        </li>
+        <li>
+          hidden - The overflow is clipped, and the rest of the content will be
+          invisible
+        </li>
+        <li>
+          scroll - The overflow is clipped, and a scrollbar is added to see the
+          rest of the content
+        </li>
+        <li>
+          auto - Similar to scroll, but it adds scrollbars only when necessary
+        </li>
+      </ul>
+      <div class="code-snippet">
+        <code>
+          div {<br />
+          width: 200px; <br />
+          height: 50px; <br />
+          background-color: #eee; <br />
+          overflow: visible; <br />
+          }
+        </code>
+      </div>
+      <h2 id="flex">Flex</h2>
+      <p>Before the Flexbox Layout module, there were four layout modes:</p>
+      <ul>
+        <li>Block, for sections in a webpage</li>
+        <li>Inline, for text</li>
+        <li>Table, for two-dimensional table data</li>
+        <li>Positioned, for explicit position of an element</li>
+      </ul>
+      <h2 id="grid">Grid</h2>
+      <p>
+        To make an HTML element behave as a grid container, you have to set the
+        display property to grid or inline-grid.
+      </p>
+      <p>
+        Grid containers consist of grid items, placed inside columns and rows.
+      </p>
+      <div class="code-snippet">
+        <code>
+          .grid-container { <br />
+          display: grid; <br />
+          grid-template-columns: 80px; <br />
+          } <br />
+        </code>
+      </div>
+      <h2 id="height-width">Height-width</h2>
+      <p>
+        The height and width properties are used to set the height and width of
+        an element.
+      </p>
+      <p>
+        The height and width can be set to auto (this is default. Means that the
+        browser calculates the height and width), or be specified in length
+        values, like px, cm, etc., or in percent (%) of the containing block.
+      </p>
+      <div class="code-snippet">
+        <code>
+          div { <br />
+          height: 200px; <br />
+          width: 50%; <br />
+          background-color: powderblue; <br />
+          }
+        </code>
+      </div>
+      <h2 id="tables">Tables</h2>
+      <p>To specify table borders in CSS, use the border property.</p>
+      <p>
+        The example below specifies a black border for table, th and td
+        elements:
+      </p>
+      <div class="code-snippet">
+        <code>
+          table, th, td { <br />
+          border: 1px solid black; <br />
+          }
+        </code>
+      </div>
+      <h2 id="display">Display</h2>
+      <p>
+        The display property is the most important CSS property for controlling
+        layout.
+      </p>
+      <p>The display property specifies if/how an element is displayed.</p>
+      <p>
+        Every HTML element has a default display value depending on what type of
+        element it is. The default display value for most elements is block or
+        inline.
+      </p>
+      <div class="code-snippet">
+        <code>
+          li { <br />
+          display: inline; <br />
+          }
+        </code>
+      </div>
+      <h2 id="icons">Icons</h2>
+      <h3>How To Add Icons</h3>
+      <p>
+        The simplest way to add an icon to your HTML page, is with an icon
+        library, such as Font Awesome
+      </p>
+      <p>
+        Add the name of the specified icon class to any inline HTML element.
+      </p>
+      <p>
+        All the icons in the icon libraries below, are scalable vectors that can
+        be customized with CSS (size, color, shadow, etc.)
+      </p>
+    </div>
+  </body>
+</html>

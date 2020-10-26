@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url("https://i.imgur.com/uj8DIiz.jpg");
+  background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  position: relative;
+  /* max-width: 100%;
+  max-height: auto; */
+  width: 100%;
+  max-width: 100%;
+
+  /* top: 0;
+  left: 0;
+  margin: 0; */
+}
+#tribute-title {
+  font-variant: small-caps;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  letter-spacing: 0.15em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  color: white;
+  border-bottom-width: auto;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  padding-left: 100px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image.image1 {
+  width: 525px;
+  height: 525px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px 30px;
+  shape-outside: circle();
+}
+
+.image.image2 {
+  width: 450px;
+  height: 450px;
+  float: right;
+  border-radius: 50%;
+  margin: 20px 30px;
+  shape-outside: circle();
+}
+
+.image.image3 {
+  width: 450px;
+  height: 450px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px 30px;
+  shape-outside: circle();
+}
+
+.image.image4 {
+  width: 525px;
+  height: 525px;
+  float: right;
+  border-radius: 50%;
+  margin: 20px 30px;
+  shape-outside: circle();
+}
+
+#title {
+  width: 40%;
+  max-width: 100%;
+  height: 1500px;
+  padding-top: 400px;
+  color: white;
+  top: 100px;
+  padding-left: 150px;
+  text-align: center;
+}
+
+#tribute-info {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 22px;
+  padding: 40px;
+
+  /* display: flex; */
+  /* bottom: 0; */
+}
+
+.biography-text {
+  padding: 0px 30px;
+}
+
+#robin {
+  font-weight: bold;
+  font-size: 3vw;
+  height: auto;
+  width: 100%;
+}
+
+#dob {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  font-weight: 300;
+  height: auto;
+  width: 100%;
+}
+
+#tribute-link {
+  color: rgb(77, 77, 255);
+  text-decoration: none;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="menu">
+      <nav>
+        <div class="button">
+          <a class="btn-open" href="#"></a>
+        </div>
+      </nav>
+      <div class="overlay">
+        <div class="wrap">
+          <ul class="wrap-nav">
+            <li>
+              <a class="menu-text" href="/">Home</a>
+            </li>
+            <li>
+              <a class="menu-text" href="/portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="menu-text" href="/about">About</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a
+              id="linkedin"
+              href="https://www.linkedin.com/in/bobbyreay/"
+              target="blank"
+            >
+              <img id="linkedin" src="/img/LinkedIn-Logo.png" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <div class="container">
+        <form id="survey-form" method="GET">
+          <div class="labels">
+            <label id="name-label" for="name">Name</label>
+          </div>
+          <div class="input-tab">
+            <input
+              class="input-field"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+              autofocus
+            />
+          </div>
+
+          <div class="labels">
+            <label id="email-label" for="email">Email</label>
+          </div>
+          <div class="input-tab">
+            <input
+              class="input-field"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+          </div>
+
+          <div class="labels">
+            <label id="number-label" for="number">Phone Number</label>
+          </div>
+          <div class="input-tab">
+            <input
+              class="input-field"
+              type="tel"
+              id="phone"
+              name="phone"
+              min="1"
+              max="120"
+              placeholder="555-555-5555"
+              required
+            />
+          </div>
+
+          <div class="labels">
+            <label for="messages">Message</label>
+          </div>
+          <div class="input-tab">
+            <textarea
+              class="input-field"
+              id="message"
+              name="message"
+              rows="10"
+              cols="40"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+
+          <div class="btn">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </form>
+
+    <script src="/javascript/contact.js"></script>
+  </body>
+</html>

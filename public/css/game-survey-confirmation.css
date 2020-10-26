@@ -1,0 +1,108 @@
+/* Menu styling */
+
+.content {
+  width: 100%;
+  margin-top: 200px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Abel");
+
+body,
+html {
+  color: #fff;
+  font-family: "Abel", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+body {
+  font-size: 1.2em;
+  background: url("https://wallpapercave.com/wp/wp1907535.jpg") center no-repeat
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 29px;
+
+  /* color: #fff; */
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: bold;
+  text-shadow: 0 8px black;
+  color: #ffd987;
+  line-height: 1.2;
+  font-family: "Press Start 2P", cursive;
+}
+
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+
+div.title {
+  position: relative;
+  top: 130px;
+  margin: 30px auto;
+}
+
+div.container {
+  position: relative;
+  top: 130px;
+  margin: 0px auto 150px auto;
+  /* justify-content: center; */
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    text-align: center;
+  }
+  body {
+    background: url("https://wallpapercave.com/wp/wp1907535.jpg") center
+      no-repeat fixed;
+    background-size: cover;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 29px;
+
+    /* color: #fff; */
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: bold;
+    text-shadow: 0 8px black;
+    color: #ffd987;
+    line-height: 1.2;
+    font-family: "Press Start 2P", cursive;
+  }
+
+  hr {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  div.title {
+    position: relative;
+    top: 130px;
+    margin: 30px auto;
+  }
+
+  div.title {
+    position: relative;
+    top: 130px;
+    margin: 30px auto;
+  }
+}

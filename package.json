@@ -1,0 +1,41 @@
+{
+  "name": "rreay724.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "acorn": ">=5.7.4",
+    "axios": "^0.19.2",
+    "babel": "^6.23.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "exphbs": "^1.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "https": "^1.0.0",
+    "node": "^13.12.0",
+    "nodemailer": "^6.4.6",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "nodemon": "^2.0.3",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "request": "^2.88.2",
+    "scss": "^0.2.4",
+    "stylus": "^0.54.7",
+    "webkit": "0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "devStart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rreay724/rreay724.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rreay724/rreay724.github.io/issues"
+  },
+  "homepage": "https://github.com/rreay724/rreay724.github.io#readme"
+}
